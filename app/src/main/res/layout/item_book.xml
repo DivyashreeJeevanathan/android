@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:padding="8dp"
+android:background="?android:attr/selectableItemBackground">
+
+<!-- ImageView for the book cover -->
+<ImageView
+    android:id="@+id/bookImage"
+    android:layout_width="80dp"
+    android:layout_height="120dp"
+    android:layout_marginEnd="8dp"
+    android:scaleType="centerCrop"
+    android:src="@drawable/ic_launcher_background" /> <!-- Placeholder image -->
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <!-- TextView for the book name -->
+    <TextView
+        android:id="@+id/bookName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Title"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+    <!-- TextView for the book author -->
+    <TextView
+        android:id="@+id/bookAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Author Name"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+    <!-- TextView for the book price -->
+    <TextView
+        android:id="@+id/bookPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹ Price"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_marginTop="4dp" />
+
+</LinearLayout>
+
+</LinearLayout>

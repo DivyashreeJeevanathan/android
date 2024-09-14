@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <!-- Application Logo -->
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/logo1" />
+
+        <TextView
+            android:id="@+id/homeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:text="Home Page"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+        <!-- Horizontal Layout for Books and Book Accessories -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <!-- Books Button -->
+            <ImageButton
+                android:id="@+id/booksButton"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/books" />
+
+            <!-- Space between buttons -->
+            <View
+                android:layout_width="20dp"
+                android:layout_height="wrap_content" />
+
+            <!-- Book Accessories Button -->
+            <ImageButton
+                android:id="@+id/bookAccessoriesButton"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/book_accessories" />
+        </LinearLayout>
+
+        <!-- Horizontal Layout for Cart and My Profile -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <!-- Cart Button -->
+            <ImageButton
+                android:id="@+id/cartButton"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/cart" />
+
+            <!-- Space between buttons -->
+            <View
+                android:layout_width="20dp"
+                android:layout_height="wrap_content" />
+
+            <!-- My Profile Button -->
+            <ImageButton
+                android:id="@+id/myProfileButton"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/my_profile" />
+        </LinearLayout>
+
+        <!-- Logout Button -->
+        <ImageButton
+            android:id="@+id/logoutButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="60dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logout" /> <!-- Align to the right -->
+
+    </LinearLayout>
+</ScrollView>
