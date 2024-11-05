@@ -1,1 +1,1 @@
-A Book store application
+A Book store android application
