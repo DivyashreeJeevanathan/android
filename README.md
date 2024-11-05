@@ -1,1 +1,1 @@
-A Book store android application
+Bibliomart - Book shopping application
